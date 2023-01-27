@@ -30,7 +30,7 @@ void bubbleSort(int a[], int n) {
   int sorted;
   // how may pair to compare?
   for (i = 0; i < n - 1; i++) {
-    //printf("round %d\n", i);
+    printf("round %d\n", i);
     sorted=0;
     for (j = 0; j < n - 1 - i; j++) {
       if (a[j] > a[j + 1]) {
@@ -41,15 +41,4 @@ void bubbleSort(int a[], int n) {
     }
     if(sorted==0) break;
   }
-}
-
-int Isprime(int n){
-  int i;
-  if(n==1) return 0;
-  for(i=2;i<n;i++)
-    {
-      if(n%i==0) break;
-    }
-  if(i==n)
-    return 1;
 }
